@@ -17,9 +17,9 @@ function App() {
   const [isTyping, setIsTyping] = useState(false);
   const chatContainerRef = useRef(null);
 
-  // Define placeholder URLs for deployment (update these after deployment)
-  const rasaUrl = 'https://your-rasa-backend.onrender.com/webhooks/rest/webhook'; // Replace with Rasa deployed URL
-  const proxyUrl = 'https://your-node-backend.onrender.com'; // Replace with Node.js proxy deployed URL
+  // Define URLs for deployment
+  const rasaUrl = 'https://ssn-college-chatbot.onrender.com/webhooks/rest/webhook'; // Updated with your deployed Rasa URL
+  const proxyUrl = 'https://your-node-backend.onrender.com'; // Replace with your deployed Node.js proxy URL
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isDarkMode);
@@ -202,5 +202,21 @@ function App() {
     </div>
   );
 }
+
+// Add Tailwind CSS animation for fade-in
+const styles = `
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+`;
 
 export default App;
