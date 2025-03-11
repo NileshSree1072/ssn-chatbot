@@ -19,7 +19,7 @@ function App() {
 
   // Define URLs for deployment
   const rasaUrl = 'https://ssn-college-chatbot.onrender.com/webhooks/rest/webhook'; // Updated with your deployed Rasa URL
-  const proxyUrl = 'https://your-node-backend.onrender.com'; // Replace with your deployed Node.js proxy URL
+  const proxyUrl = 'https://ssn-chatbot-backend.onrender.com'; // Replace with your deployed Node.js proxy URL
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isDarkMode);
