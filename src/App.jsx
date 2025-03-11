@@ -18,7 +18,7 @@ function App() {
   const chatContainerRef = useRef(null);
 
   // Define URLs for deployment
-  const rasaUrl = 'https://ssn-college-chatbot.onrender.com/webhooks/rest/webhook'; // Updated with your deployed Rasa URL
+  const rasaUrl = 'https://web-production-8465.up.railway.app/webhooks/rest/webhook'; // Updated with your deployed Rasa URL
   const proxyUrl = 'https://ssn-chatbot-backend.onrender.com'; // Replace with your deployed Node.js proxy URL
 
   useEffect(() => {
