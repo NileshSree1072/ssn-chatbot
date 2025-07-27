@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Animation */
 .animate-fade-in {
   animation: fadeIn 0.3s ease-in;
 }
@@ -16,4 +17,26 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Ensure smooth dark/light theme transitions */
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Full height layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Optional: Improve scrollbar visibility in dark mode */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
 }

@@ -1,14 +1,17 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"></script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SSN College Chatbot</title>
+
+    <!-- Rasa Webchat (optional, if needed elsewhere) -->
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"></script>
+
+    <!-- Optional: Add a favicon -->
+    <link rel="icon" href="/favicon.ico" />
   </head>
-  <body>
+  <body class="transition-colors duration-300 bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
